@@ -1,0 +1,28 @@
+@font-face {
+    font-family: Geist;
+    src: url(assets/geist.woff2) format("opentype");
+}
+
+html {
+    height: 100%;
+    font-family: Geist;
+    background-color: white;
+    color: black;
+}
+
+body {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: #c0c0c0;
+}
