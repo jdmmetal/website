@@ -2,9 +2,13 @@
 
 Landing page for JDM Metal Trading, LLC.
 
+## Tools
+
+-   [Scroll Reveal](https://github.com/tinesoft/ngx-scrollreveal)
+-   [Eva Icons](https://github.com/akveo/eva-icons)
+
 ## Inspirations
 
--   [Welcome Message.](https://www.welcomessage.io/)
 -   [Lovi](https://lovi.care/)
 -   [Together Art](https://www.together.art/gorgeous)
 -   [Design Buddy](https://designbuddy.net/)
