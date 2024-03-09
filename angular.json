@@ -32,7 +32,7 @@
                             }
                         ],
                         "styles": ["src/styles.scss"],
-                        "scripts": []
+                        "scripts": ["./node_modules/scrollreveal/dist/scrollreveal.js"]
                     },
                     "configurations": {
                         "production": {
@@ -94,7 +94,7 @@
                             }
                         ],
                         "styles": ["src/styles.scss"],
-                        "scripts": []
+                        "scripts": ["./node_modules/scrollreveal/dist/scrollreveal.js"]
                     }
                 }
             }
