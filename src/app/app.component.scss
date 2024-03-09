@@ -7,10 +7,17 @@
     padding: 50px;
 }
 
-nav {
-    display: flex;
-    justify-content: space-between;
-    font-size: 2rem;
+.hero-section,
+.mission-section,
+.statistics-section,
+.next-section {
+    &--title {
+        font-size: 2.5rem;
+    }
+
+    &--subtitle {
+        font-size: 1.5rem;
+    }
 }
 
 .hero-section {
@@ -18,18 +25,27 @@ nav {
     flex-direction: column;
     row-gap: 20px;
     align-items: center;
-    justify-content: center;
 
     &--title {
-        font-size: 3rem;
-    }
-
-    &--subtitle {
-        font-size: 1.2rem;
-        font-weight: 400;
+        font-size: 3.5rem;
     }
 
     img {
         max-height: 500px;
+    }
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+    padding-bottom: 50px;
+
+    &--column {
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+        text-align: center;
+        font-size: 1.2rem;
     }
 }
