@@ -11,8 +11,13 @@
 .mission-section,
 .statistics-section,
 .next-section {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+
     &--title {
         font-size: 2.5rem;
+        font-weight: 700;
     }
 
     &--subtitle {
@@ -21,9 +26,6 @@
 }
 
 .hero-section {
-    display: flex;
-    flex-direction: column;
-    row-gap: 20px;
     align-items: center;
 
     &--title {
@@ -32,6 +34,41 @@
 
     img {
         max-height: 500px;
+    }
+}
+
+.statistics-section {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+
+    &--content {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 20px;
+
+        &--card {
+            display: flex;
+            flex-direction: column;
+            row-gap: 10px;
+            background-color: #f6f5f4;
+            border-radius: 10px;
+            padding: 20px;
+            transition: transform .25s;
+
+            &--title {
+                font-size: 1.2rem;
+                font-weight: 500;
+            }
+
+            &--description {
+                font-weight: 400;
+            }
+
+            &:hover {
+                transform: scale(1.05);
+            }
+        }
     }
 }
 
