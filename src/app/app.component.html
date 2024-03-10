@@ -1,47 +1,67 @@
 <!-- Navigation -->
-<nav ngsReveal>
-    <a href="https://jaimezmayz.com" target="_blank" title="Logo">
+<nav [ngsReveal]="revealSettings">
+    <a href="https://jdmmetaltrading.com" target="_blank" title="Logo">
         <span title="Logo">Logo</span>
     </a>
 
     <!-- Email -->
-    <a href="mailto:juanmayz@gmail.com">
+    <a href="mailto:jdmmetaltrading@gmail.com">
         <i class="eva eva-email" title="Email"></i>
     </a>
 </nav>
 
 <!-- Hero -->
-<section class="hero-section" ngsReveal>
+<section class="hero-section">
     <!-- Title -->
-    <span class="hero-section--title" title="JDM Metal Trading">JDM Metal Trading</span>
+    <span class="hero-section--title" title="JDM Metal Trading" [ngsReveal]="revealSettings">JDM Metal Trading</span>
 
     <!-- Subtitle -->
     <span
         class="hero-section--subtitle"
         title="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis nihil temporibus iure, accusamus eos autem alias beatae quam
         distinctio architecto aliquid eligendi nobis. In perspiciatis eius reiciendis quo commodi eveniet."
+        [ngsReveal]="revealSettings"
     >
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis nihil temporibus iure, accusamus eos autem alias beatae quam
         distinctio architecto aliquid eligendi nobis. In perspiciatis eius reiciendis quo commodi eveniet.
     </span>
 
     <!-- Thumbnail -->
-    <img src="https://framerusercontent.com/images/Z0aTSGJ65iwbzMDLCRJIN2Fxk.png" />
+    <div [ngsReveal]="revealSettings">
+        <img src="https://framerusercontent.com/images/Z0aTSGJ65iwbzMDLCRJIN2Fxk.png" alt="Thumbnail" />
+    </div>
 </section>
 
 <!-- Our Mission -->
-<section class="mission-section" ngsReveal>
+<section class="mission-section">
     <!-- Title -->
-    <span class="mission-section--title" title="Our Mission">Our Mission</span>
+    <span class="mission-section--title" title="Our Mission" [ngsReveal]="revealSettings">Our Mission</span>
+
+    <!-- Content -->
+    <div class="mission-section--content">
+        <!-- Message -->
+        <span [ngsReveal]="revealSettings">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore officia eligendi aliquid facere iure nesciunt aspernatur
+            exercitationem aut, delectus autem quos voluptatem, dolore expedita, rem deleniti ipsa pariatur cupiditate officiis.
+        </span>
+
+        <!-- Preview -->
+        <div [ngsReveal]="revealSettings">
+            <img
+                src="https://images.unsplash.com/reserve/aOcWqRTfQ12uwr3wWevA_14401305508_804b300054_o.jpg?q=80&w=1176&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="Road"
+            />
+        </div>
+    </div>
 </section>
 
 <!-- Statistics -->
-<section class="statistics-section" ngsReveal>
+<section class="statistics-section">
     <!-- Title -->
-    <span class="statistics-section--title" title="Outcomes">Outcomes</span>
+    <span class="statistics-section--title" title="Outcomes" [ngsReveal]="revealSettings">Outcomes</span>
 
     <!-- Content -->
-    <div class="statistics-section--content">
+    <div class="statistics-section--content" [ngsReveal]="revealSettings">
         <div class="statistics-section--content--card">
             <span class="statistics-section--content--card--title" title="Statistic 1">Statistic 1</span>
             <span class="statistics-section--content--card--description" title="Description 1">Description 1</span>
@@ -58,27 +78,40 @@
 </section>
 
 <!-- Next Steps -->
-<section class="next-section" ngsReveal>
+<section class="next-section">
     <!-- Title -->
-    <span class="next-section--title" title="Next Steps">Next Steps</span>
+    <span class="next-section--title" title="Next Steps" [ngsReveal]="revealSettings">Next Steps</span>
+
+    <!-- Content -->
+    <span class="next-section--content" [ngsReveal]="revealSettings">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore officia eligendi aliquid facere iure nesciunt aspernatur
+        exercitationem aut, delectus autem quos voluptatem, dolore expedita, rem deleniti ipsa pariatur cupiditate officiis.
+    </span>
+
+    <!-- Button -->
+    <div class="next-section--action" [ngsReveal]="revealSettings">
+        <a href="mailto:jdmmetaltrading@gmail.com">
+            <button>Get Started!</button>
+        </a>
+    </div>
 </section>
 
 <!-- Footer -->
-<footer class="footer" ngsReveal>
+<footer class="footer">
     <!-- Contact -->
-    <div class="footer--column">
-        <a href="mailto:jamiezmayz@gmail.com" title="Email">Email</a>
+    <div class="footer--column" [ngsReveal]="revealSettings">
+        <a href="mailto:jdmmetaltrading@gmail.com" title="Email">Email</a>
         <a href="tel:6031112298" title="Cell Phone">Cell Phone</a>
     </div>
 
     <!-- Social -->
-    <div class="footer--column">
+    <div class="footer--column" [ngsReveal]="revealSettings">
         <a href="https://www.facebook.com" target="_blank" title="Facebook">Facebook</a>
         <a href="https://www.twitter.com" target="_blank" title="Twitter">Twitter</a>
     </div>
 
     <!-- References -->
-    <div class="footer--column">
+    <div class="footer--column" [ngsReveal]="revealSettings">
         <a href="https://www.google.com" target="_blank" title="Reference 1">Reference 1</a>
         <a href="https://www.google.com" target="_blank" title="Reference 2">Reference 2</a>
     </div>

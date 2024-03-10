@@ -22,6 +22,10 @@
     &--subtitle {
         font-size: 1.5rem;
     }
+
+    &--content {
+        font-size: 1.2rem;
+    }
 }
 
 .hero-section {
@@ -38,6 +42,21 @@
 
     img {
         max-height: 500px;
+    }
+}
+
+.mission-section {
+    &--content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 20px;
+        row-gap: 20px;
+    }
+
+    @media only screen and (max-width: 600px) {
+        &--content {
+            grid-template-columns: 1fr;
+        }
     }
 }
 
@@ -71,12 +90,11 @@
             }
 
             &:hover {
-                transform: scale(1.05);
+                transform: rotate(5deg);
             }
         }
     }
 
-    /** Phones */
     @media only screen and (max-width: 600px) {
         &--content {
             grid-template-columns: 1fr;
@@ -88,6 +106,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 20px;
+    row-gap: 10px;
     padding-bottom: 50px;
 
     &--column {
@@ -96,5 +115,9 @@
         row-gap: 10px;
         text-align: center;
         font-size: 1rem;
+    }
+
+    @media only screen and (max-width: 600px) {
+        grid-template-columns: 1fr;
     }
 }

@@ -11,7 +11,6 @@ body {
     height: 100%;
     padding: 50px;
 
-    /** Phones */
     @media only screen and (max-width: 600px) {
         padding: 20px;
     }
@@ -27,6 +26,27 @@ nav {
 img {
     display: block;
     max-width: 100%;
+    border-radius: 20px;
+    transition: transform .25s;
+
+    &:hover {
+        transform: rotate(5deg);
+    }
+}
+
+button {
+    font-size: 1.05rem;
+    color: #fff;
+    background-color: #000;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    transition: transform .25s;
+
+    &:hover {
+        cursor: pointer;
+        transform: scale(1.05);
+    }
 }
 
 a {
@@ -35,11 +55,13 @@ a {
     transition: transform .25s;
 
     &:hover {
-        transform: scale(1.2);
+        transform: scale(1.15);
     }
 }
 
 * {
+    outline: none;
+    box-sizing: border-box;
     margin: 0;
 }
 
