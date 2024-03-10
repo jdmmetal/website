@@ -4,7 +4,6 @@
     display: flex;
     flex-direction: column;
     row-gap: 100px;
-    padding: 50px;
 }
 
 .hero-section,
@@ -46,6 +45,7 @@
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         column-gap: 20px;
+        row-gap: 20px;
 
         &--card {
             display: flex;
@@ -68,6 +68,13 @@
             &:hover {
                 transform: scale(1.05);
             }
+        }
+    }
+
+    /** Phones */
+    @media only screen and (max-width: 600px) {
+        &--content {
+            grid-template-columns: 1fr;
         }
     }
 }
