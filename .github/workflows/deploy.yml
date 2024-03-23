@@ -13,11 +13,11 @@ jobs:
               with:
                   node-version: '20.x'
             - name: Remove Dependencies
-              run: rm package-lock.json
+              run: rm yarn.lock
             - name: Install Packages
-              run: npm install
+              run: yarn install
             - name: Build Project
-              run: npm run build
+              run: yarn build
             - name: Archive Build
               if: success()
               uses: actions/upload-artifact@v1
