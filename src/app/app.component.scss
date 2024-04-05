@@ -81,16 +81,16 @@
             transition: transform .25s;
 
             &--title {
-                font-size: 1.2rem;
+                font-size: 1.8rem;
                 font-weight: 500;
             }
 
             &--description {
-                font-weight: 400;
+                font-weight: 600;
             }
 
             &:hover {
-                transform: rotate(5deg);
+                transform: rotate(0deg);
             }
         }
     }
