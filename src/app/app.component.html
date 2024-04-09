@@ -24,10 +24,20 @@
          We buy and sell metals internationally.
     </span>
 
+</section>
+<!-- introduced new section - showcase -->
+
+<!-- Showcase -->
+<section class="showcase-section">
+
     <!-- Thumbnail -->
-    <div [ngsReveal]="revealSettings">
-        <img src="https://framerusercontent.com/images/Z0aTSGJ65iwbzMDLCRJIN2Fxk.png" alt="Thumbnail" />
+    <div class="showcase-section--grid" [ngsReveal]="revealSettings">
+        <img src="/assets/site-pics/COPPER/BARLEY/Barley1.jpg" alt="Thumbnail" />
+        <img src="/assets/site-pics/COPPER/T-BIRCH/TBirch3.jpg" alt="Thumbnail" />
+        <img src="/assets/site-pics/COPPER/BARLEY/Barley2.jpg" alt="Thumbnail" />
+        <img src="/assets/site-pics/COPPER/T-BIRCH/TBirch2.jpg" alt="Thumbnail" />
     </div>
+
 </section>
 
 <!-- Our Mission -->
@@ -39,16 +49,17 @@
     <div class="mission-section--content">
         <!-- Message -->
         <span [ngsReveal]="revealSettings">
-            JDM Metal Trading is a family owned business in the international scrap metal trade. We have been operational for over a decade, and conduct business with over 100 providers in 25 countries.
+            JDM Metal Trading is a family owned business in the international scrap metal trade. We have been operational for over a decade, and conduct business with over 100 partners in 25 countries.
         </span>
 
         <!-- Preview -->
-        <div [ngsReveal]="revealSettings">
+        <!-- removed image from hero section -->
+        <!--div [ngsReveal]="revealSettings">
             <img
                 src="https://images.unsplash.com/reserve/aOcWqRTfQ12uwr3wWevA_14401305508_804b300054_o.jpg?q=80&w=1176&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 alt="Road"
             />
-        </div>
+        </div-->
     </div>
 </section>
 
@@ -74,7 +85,16 @@
                 class="statistics-section--content--card--description"
                 title="Countries Served"
             >
-                United States <br> South Korea <br> China <br> Japan <br> India <br> Colombia <br> Brazil <br> Venezuela <br> 
+            <!-- turned the list of countries into an unordered list. maybe not the best? idk  -->
+                <ul> 
+                    <li>United States</li><li> South Korea</li><li>China</li><li>Japan</li>
+                    <li>India</li><li>Colombia</li><li>Brazil</li><li>Venezuela</li>
+                    <li>Mexico</li><li>Chile</li><li>Taiwan</li><li>Malaysia</li>
+                    <li>Spain</li><li>Greece</li><li>Germany</li><li>United Kingdom</li>
+                    <li>Peru</li><li>Ecuador</li><li>Bolivia</li><li>Uruguay</li>
+                    <li>Paraguay</li><li>Hong Kong</li><li>Turkey</li><li>Morocco</li>
+                    <li>United Arab Emirates</li><li>South Africa</li><li>And More...</li>  
+                </ul>
             </span>
         </div>
         
@@ -88,35 +108,38 @@
 
     <!-- Content -->
     <span class="next-section--content" [ngsReveal]="revealSettings">
-        JDM Metal Trading is available by mail, e-mail, WhatsApp, phone, and fax. We respond to serious inquiries within 2 business days. We look forward to doing business with you!
+        JDM Metal Trading is available by e-mail, phone, WhatsApp, and WeChat. We respond to serious inquiries within 24 hours. We look forward to doing business with you!
     </span>
 
     <!-- Button -->
-    <div class="next-section--action" [ngsReveal]="revealSettings">
+    <!-- removed button - might reinstate -->
+    <!-- <div class="next-section--action" [ngsReveal]="revealSettings">
         <a href="mailto:juan@jdmmetal.com">
             <button>E-Mail</button>
         </a>
         
-    </div>
+    </div> -->
+
 </section>
 
 <!-- Footer -->
 <footer class="footer">
     <!-- Contact -->
     <div class="footer--column" [ngsReveal]="revealSettings">
-        <a href="mailto:jdmmetaltrading@gmail.com" title="Email">Email</a>
+        <a href="mailto:juan@jdmmetal.com" title="Email">E-mail</a>
         <a href="tel:6031112298" title="Cell Phone">Cell Phone</a>
     </div>
 
     <!-- Social -->
     <div class="footer--column" [ngsReveal]="revealSettings">
-        <a href="https://www.facebook.com" target="_blank" title="Facebook">Facebook</a>
+        <a href="https://www.linkedin.com/in/jaimez-mayz-87682283" target="_blank" title="Facebook">LinkedIn</a>
         <a href="https://www.twitter.com" target="_blank" title="Twitter">Twitter</a>
     </div>
 
-    <!-- References -->
+    <!-- References 
     <div class="footer--column" [ngsReveal]="revealSettings">
         <a href="https://www.google.com" target="_blank" title="Reference 1">Reference 1</a>
         <a href="https://www.google.com" target="_blank" title="Reference 2">Reference 2</a>
     </div>
+            -->
 </footer>

@@ -4,12 +4,12 @@
     display: flex;
     flex-direction: column;
     row-gap: 100px;
-    padding-left: 10%;
-    padding-right: 10%;
+    
     
 }
-
+/* Introduced a Showcase Section - image flexbox under title  */
 .hero-section,
+.showcase-section,
 .mission-section,
 .statistics-section,
 .next-section {
@@ -17,6 +17,11 @@
     display: flex;
     flex-direction: column;
     row-gap: 20px;
+
+    /* added L/R padding to every section on desktop, removed it on mobile  */
+    padding-left: 10%;
+    padding-right: 10%;
+        
 
     &--title {
         font-size: 2.5rem;
@@ -31,16 +36,21 @@
         font-size: 1.2rem;
         font-weight: 600;
     }
+        
+    @media only screen and (max-width: 600px) {
+    
+        padding-left: 0%;
+        padding-right: 0%;
+    
+    }
 }
+   
 
 .hero-section {
-    .hero-section--title{
-        font-family: "Georgia", serif;
-    }
-
     align-items: center;
 
     &--title {
+        font-family: "Georgia", serif;
         font-size: 3.5rem;
         text-align: center;
     }
@@ -49,18 +59,57 @@
         text-align: center;
     }
 
+    /* no image here anymore so no need - didnt wanna delete
     img {
         max-height: 350px;
+    }
+    */
+}
+
+
+/* introduced showcase section - image flexbox under title  */
+.showcase-section {
+
+    &--grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+
+    justify-content: space-evenly;
+    justify-items: center;
+    align-content: space-evenly;
+    align-items: center;
+    gap: 10px;
+    
+
+    img {
+        max-height: 350px;
+        }
+    }
+
+    @media only screen and (max-width: 600px) {
+        &--grid {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    
+        padding-left: 0%;
+        padding-right: 0%;
+    
     }
 }
 
 .mission-section {
+
+    /* Removed the grid since I removed the picture - its just text now. looks fine on mobile
+    
     &--content {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         column-gap: 20px;
         row-gap: 20px;
-    }
+    } 
+    
+    */
 
     @media only screen and (max-width: 600px) {
         &--content {
@@ -96,6 +145,28 @@
 
             &--description {
                 font-weight: 600;
+
+               /* I will get this to work somehow
+               trying to make columns of text in a flexbox
+               
+               ul {
+                    list-style-type: square;
+                    list-style-position: outside;
+                    display: flex;
+                    flex-direction: row;
+                    width: 80%;
+                    padding-left: 100;
+                    padding-right: 100;
+                }
+                li {
+                    
+                    display: inline-block;
+                    width: 50%;
+                    height: auto;
+                    text-align: center;
+                    justify-content: center;
+                  }*/
+
             }
 
             &:hover {
@@ -113,7 +184,7 @@
 
 .footer {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     column-gap: 20px;
     row-gap: 10px;
     padding-bottom: 50px;
@@ -123,7 +194,9 @@
         flex-direction: column;
         row-gap: 10px;
         text-align: center;
-        font-size: 1rem;
+        font-size: 2rem;
+        font-weight: 700;
+        color: #ebc64c;
     }
 
     @media only screen and (max-width: 600px) {
