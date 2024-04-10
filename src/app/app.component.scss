@@ -145,6 +145,8 @@
 
             &--description {
                 font-weight: 600;
+                
+
 
                /* I will get this to work somehow
                trying to make columns of text in a flexbox
@@ -167,7 +169,21 @@
                     justify-content: center;
                   }*/
 
+                  #columns{
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                }
+    
+                #columns .country-list-item{
+                    flex-basis: 50%;
+                    
+                }
+
+
             }
+
+           
 
             &:hover {
                 transform: rotate(0deg);
