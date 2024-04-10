@@ -72,11 +72,51 @@
     <div class="statistics-section--content" [ngsReveal]="revealSettings">
         <div class="statistics-section--content--card">
             <span class="statistics-section--content--card--title" title="Materials">Materials</span>
+            
             <span
                 class="statistics-section--content--card--description"
                 title="Materials Traded"
             >
-                Barley <br> Birch Cliff <br> Berry Candy<br> Honey<br> Ebony <br> Ocean <br> Clove <br> Talk <br> Tense <br> Brass Ingots <br> Lead Ingots <br> UBC <br> Tally <br> Stainless Steel <br> Aluminium RSI 
+
+            <div class=material-aluminium>
+                <dl id="mat-list">
+                    <dt class="material-list-title">Aluminium</dt>
+                    <dd class="material-list-item">Barley</dd>
+                    <dd class="material-list-item">Birch Cliff</dd>
+                    <dd class="material-list-item">Berry Candy</dd>
+                </dl>
+            </div>
+
+            <div class=material-copper>
+                <dl id="mat-list">
+                    <dd class="material-list-title">Copper</dd>
+                    <dd class="material-list-item">Honey</dd>
+                    <dd class="material-list-item">Ebony</dd>
+                    <dd class="material-list-item">Ocean</dd>
+                    <dd class="material-list-item">Clove</dd>
+                    <dd class="material-list-item">Talk</dd>
+                    <dd class="material-list-item">Tense</dd>
+                </dl>
+            </div>
+
+            <div class=material-zinc>
+                <dl id="mat-list">
+                    <dd class="material-list-title">Zinc</dd>
+                    <dd class="material-list-item">Brass Ingots</dd>
+                    <dd class="material-list-item">Lead Ingots</dd>
+                    <dd class="material-list-item">UBC</dd>
+                </dl>
+            </div>
+
+            <div class=material-lead>
+                <dl id="mat-list">
+                    <dd class="material-list-title">Lead</dd>
+                    <dd class="material-list-item">Tally</dd>
+                    <dd class="material-list-item">Stainless Steel</dd>
+                    <dd class="material-list-item">Aluminium RSI</dd>
+                </dl>
+            </div>
+
             </span>
         </div>
         <div class="statistics-section--content--card">
@@ -86,35 +126,71 @@
                 title="Countries Served"
             >
             <!-- turned the list of countries into an unordered list. maybe not the best? idk  -->
-                <ul id="columns"> 
-                    <li class="country-list-item">United States</li>
-                    <li class="country-list-item"> South Korea</li>
-                    <li class="country-list-item">China</li>
-                    <li class="country-list-item">Japan</li>
-                    <li class="country-list-item">India</li>
-                    <li class="country-list-item">Colombia</li>
-                    <li class="country-list-item">Brazil</li>
-                    <li class="country-list-item">Venezuela</li>
-                    <li class="country-list-item">Mexico</li>
-                    <li class="country-list-item">Chile</li>
-                    <li class="country-list-item">Taiwan</li>
-                    <li class="country-list-item">Malaysia</li>
-                    <li class="country-list-item">Spain</li>
-                    <li class="country-list-item">Greece</li>
-                    <li class="country-list-item">Germany</li>
-                    <li class="country-list-item">United Kingdom</li>
-                    <li class="country-list-item">Peru</li>
-                    <li class="country-list-item">Ecuador</li>
-                    <li class="country-list-item">Bolivia</li>
-                    <li class="country-list-item">Uruguay</li>
-                    <li class="country-list-item">Paraguay</li>
-                    <li class="country-list-item">Hong Kong</li>
-                    <li class="country-list-item">Turkey</li>
-                    <li class="country-list-item">Morocco</li>
-                    <li class="country-list-item">United Arab Emirates</li>
-                    <li class="country-list-item">South Africa</li>
-                    <li class="country-list-item">And More...</li>  
-                </ul>
+        
+            <div class=country-asia>
+                <dl id="mat-list">
+                    <dd class="country-list-title">Asia</dd>
+                    <dd class="country-list-item">South Korea</dd>
+                    <dd class="country-list-item">China</dd>
+                    <dd class="country-list-item">Japan</dd>
+                    <dd class="country-list-item">India</dd>
+                    <dd class="country-list-item">Taiwan</dd>
+                    <dd class="country-list-item">Malaysia</dd>
+                    <dd class="country-list-item">Hong Kong</dd>
+                    <dd class="country-list-item">Malaysia</dd>
+                    <dd class="country-list-item">Turkey</dd>
+                </dl>
+            </div>
+
+            <div class=country-southamerica>
+                <dl id="mat-list">
+                    <dd class="country-list-title">South America</dd>
+                    <dd class="country-list-item">Colombia</dd>
+                    <dd class="country-list-item">Brazil</dd>
+                    <dd class="country-list-item">Venezuela</dd>
+                    <dd class="country-list-item">Chile</dd>
+                    <dd class="country-list-item">Peru</dd>
+                    <dd class="country-list-item">Ecuador</dd>
+                    <dd class="country-list-item">Bolivia</dd>
+                    <dd class="country-list-item">Uruguay</dd>
+                    <dd class="country-list-item">Paraguay</dd>
+                </dl>
+            </div>
+
+            <div class=country-africa>
+                <dl id="mat-list">
+                    <dd class="country-list-title">Africa</dd>
+                    <dd class="country-list-item">Morocco</dd>
+                    <dd class="country-list-item">United Arab Emirates</dd>
+                    <dd class="country-list-item">South Africa</dd>
+
+                </dl>
+            </div>
+
+            <div class=country-europe>
+                <dl id="mat-list">
+                    <dd class="country-list-title">Europe</dd>
+                    <dd class="country-list-item">Spain</dd>
+                    <dd class="country-list-item">Greece</dd>
+                    <dd class="country-list-item">Germany</dd>
+                    <dd class="country-list-item">United Kingdom</dd>
+                </dl>
+            </div>
+
+            <div class=country-northamerica>
+                <dl id="mat-list">
+                    <dt class="country-list-title">North America</dt>
+                    <dd class="country-list-item">United States</dd>
+                    <dd class="country-list-item">Mexico</dd>
+                </dl>
+            </div>
+            
+            <div class=country-misc>
+                <dl id="mat-list">
+                    <dd class="country-list-title"><br><br><br>And More...</dd>
+                </dl>
+            </div>
+
             </span>
         </div>
         

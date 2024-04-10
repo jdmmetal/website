@@ -144,42 +144,34 @@
             }
 
             &--description {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+                gap: 20px;
                 font-weight: 600;
                 
-
-
-               /* I will get this to work somehow
-               trying to make columns of text in a flexbox
-               
-               ul {
-                    list-style-type: square;
-                    list-style-position: outside;
-                    display: flex;
-                    flex-direction: row;
-                    width: 80%;
-                    padding-left: 100;
-                    padding-right: 100;
-                }
-                li {
-                    
-                    display: inline-block;
-                    width: 50%;
-                    height: auto;
-                    text-align: center;
-                    justify-content: center;
-                  }*/
-
-                  #columns{
-                    display: flex;
-                    flex-direction: row;
-                    flex-wrap: wrap;
-                }
-    
-                #columns .country-list-item{
-                    flex-basis: 50%;
-                    
+                .country-northamerica,
+                .country-southamerica,
+                .country-europe,
+                .country-asia,
+                .country-africa,
+                .country-misc{
+                    width: 40%;
                 }
 
+                .material-aluminium,
+                .material-copper,
+                .material-zinc,
+                .material-lead{
+                    width: 40%;
+                }
+
+                .country-list-title,
+                .material-list-title{
+                    font-size: 1.6rem;
+                    font-weight:800;
+                }
 
             }
 
