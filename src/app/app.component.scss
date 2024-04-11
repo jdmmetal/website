@@ -132,6 +132,7 @@
         &--card {
             display: flex;
             flex-direction: column;
+            justify-content: space-between;
             row-gap: 10px;
             background-color: #2e2e2e;
             border-radius: 10px;
@@ -139,8 +140,9 @@
             transition: transform .25s;
 
             &--title {
-                font-size: 1.8rem;
+                font-size: 2rem;
                 font-weight: 500;
+                align-self: center;
             }
 
             &--description {
@@ -148,8 +150,9 @@
                 flex-direction: row;
                 flex-wrap: wrap;
                 justify-content: space-evenly;
-                gap: 20px;
+                gap: 30px;
                 font-weight: 600;
+                max-height: 200;
                 
                 .country-northamerica,
                 .country-southamerica,
@@ -162,16 +165,20 @@
 
                 .material-aluminium,
                 .material-copper,
+                .material-stainless,
                 .material-zinc,
-                .material-lead{
+                .material-lead,
+                .material-misc{
                     width: 40%;
                 }
 
                 .country-list-title,
                 .material-list-title{
-                    font-size: 1.6rem;
-                    font-weight:800;
+                    font-size: 1.55rem;
+                    color: #fc9105;
+                    font-weight: 550;
                 }
+
 
             }
 
