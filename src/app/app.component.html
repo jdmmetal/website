@@ -1,7 +1,7 @@
 <!-- Navigation -->
 <nav [ngsReveal]="revealSettings">
     <a href="https://jdmmetal.com" target="_blank" title="Logo">
-        <span title="Logo">Logo</span>
+        <div title="Logo" class="logo">JDM Metal Trading</div>
     </a>
 
     <!-- Email -->
@@ -230,7 +230,18 @@
 
     <!-- Content -->
     <span class="next-section--content" [ngsReveal]="revealSettings">
-        JDM Metal Trading is available by e-mail, phone, WhatsApp, and WeChat. We respond to serious inquiries within 24 hours. We look forward to doing business with you!
+        JDM Metal Trading is available by e-mail, phone, WhatsApp, and WeChat. <br><br> We respond to serious inquiries within 24 hours. 
+        <br><br> We look forward to doing business with you!
+        <br><br><br>
+
+       <span class="next-section--content--contact">
+        Jaimez Mayz
+        <br>
+        JDM Metal Trading
+        <br>
+        Phone: +1-786-300-7404
+       </span>
+      
     </span>
 
     <!-- Button -->
@@ -247,16 +258,28 @@
 <!-- Footer -->
 <footer class="footer">
     <!-- Contact -->
+
     <div class="footer--column" [ngsReveal]="revealSettings">
         <a href="mailto:juan@jdmmetal.com" title="Email">E-mail</a>
-        <a href="tel:6031112298" title="Cell Phone">Cell Phone</a>
+        <a href="tel:7863007404" title="Cell Phone">Cell Phone</a>
+        <a href="https://www.linkedin.com/in/jaimez-mayz-87682283" target="_blank" title="LinkedIn">LinkedIn</a>
     </div>
 
-    <!-- Social -->
-    <div class="footer--column" [ngsReveal]="revealSettings">
-        <a href="https://www.linkedin.com/in/jaimez-mayz-87682283" target="_blank" title="Facebook">LinkedIn</a>
-        <a href="https://www.twitter.com" target="_blank" title="Twitter">Twitter</a>
+    <div class="footer--certs" [ngsReveal]="revealSettings">
+        <img src="/assets/site-pics/certs/AQSIQcert.png" alt="Thumbnail" />
+        <img src="/assets/site-pics/certs/ISRIMember.jpg" alt="Thumbnail" />
+        <!-- <img src="/assets/site-pics/certs/iso9001.png" alt="Thumbnail" /> -->
     </div>
+
+    
+    <div class="footer--copyright" [ngsReveal]="revealSettings">
+        © JDM Metal Trading 2024
+    </div>
+
+
+
+    <!-- Social -->
+   
 
     <!-- References 
     <div class="footer--column" [ngsReveal]="revealSettings">

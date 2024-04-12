@@ -7,6 +7,13 @@
     
     
 }
+nav{
+    color: #fc9105;
+    .logo{
+        font-size: 1.3rem;
+    }
+}
+
 /* Introduced a Showcase Section - image flexbox under title  */
 .hero-section,
 .showcase-section,
@@ -19,13 +26,14 @@
     row-gap: 20px;
 
     /* added L/R padding to every section on desktop, removed it on mobile  */
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-left: 15%;
+    padding-right: 15%;
         
 
     &--title {
         font-size: 2.5rem;
         font-weight: 700;
+        color: #fc9105;
     }
 
     &--subtitle {
@@ -53,6 +61,7 @@
         font-family: "Georgia", serif;
         font-size: 3.5rem;
         text-align: center;
+        
     }
 
     &--subtitle {
@@ -137,10 +146,10 @@
             background-color: #2e2e2e;
             border-radius: 10px;
             padding: 20px;
-            transition: transform .25s;
+            transition: transform 0.25s;
 
             &--title {
-                font-size: 2rem;
+                font-size: 2.5rem;
                 font-weight: 500;
                 align-self: center;
             }
@@ -197,22 +206,60 @@
     }
 }
 
+
+.next-section{
+    &--title{
+        color: #fc9105;
+    }
+    &--content{
+        font-size: 1.4rem;
+        font-weight: 500;
+
+        &--contact{
+        font-size: 1.5rem;
+        font-weight: 600;
+
+        }
+    }
+}
+
+
+
 .footer {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     column-gap: 20px;
-    row-gap: 10px;
+    row-gap: 50px;
     padding-bottom: 50px;
 
     &--column {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        justify-content: center;
+        gap: 50px;
         row-gap: 10px;
         text-align: center;
-        font-size: 2rem;
+        font-size: 1.5rem;
         font-weight: 700;
-        color: #ebc64c;
+        color: #fc9105;
     }
+    &--certs {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+
+        img{
+            max-height: 100px;
+            max-width: 250px;
+            border-radius: 0;
+        }
+    }
+
+    &--copyright{
+        display: flex;
+        justify-content: center;
+    }
+
 
     @media only screen and (max-width: 600px) {
         grid-template-columns: 1fr;
