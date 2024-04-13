@@ -79,30 +79,21 @@ nav{
 /* introduced showcase section - image flexbox under title  */
 .showcase-section {
 
-    &--grid{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: auto;
-
-    justify-content: space-evenly;
-    justify-items: center;
-    align-content: space-evenly;
-    align-items: center;
-    gap: 10px;
-    
-
-    img {
-        max-height: 350px;
-        }
+    &--carousel{
+        max-width: 640px;
+        
     }
+    align-items: center;
+
 
     @media only screen and (max-width: 600px) {
         &--grid {
             grid-template-columns: repeat(2, 1fr);
+            padding-left: 0%;
+            padding-right: 0%;
         }
     
-        padding-left: 0%;
-        padding-right: 0%;
+        
     
     }
 }
@@ -251,7 +242,6 @@ nav{
         img{
             max-height: 100px;
             max-width: 250px;
-            border-radius: 0;
         }
     }
 

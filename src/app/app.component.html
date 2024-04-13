@@ -1,5 +1,5 @@
 <!-- Navigation -->
-<nav [ngsReveal]="revealSettings">
+<nav>
     <a href="https://jdmmetal.com" target="_blank" title="Logo">
         <div title="Logo" class="logo">JDM Metal Trading</div>
     </a>
@@ -13,13 +13,13 @@
 <!-- Hero -->
 <section class="hero-section">
     <!-- Title -->
-    <span class="hero-section--title" title="JDM Metal Trading" [ngsReveal]="revealSettings">JDM Metal Trading</span>
+    <span class="hero-section--title" title="JDM Metal Trading">JDM Metal Trading</span>
 
     <!-- Subtitle -->
     <span
         class="hero-section--subtitle"
         title="JDM header title"
-        [ngsReveal]="revealSettings"
+       
     >
          We buy and sell metals internationally.
     </span>
@@ -31,16 +31,18 @@
 <section class="showcase-section">
 
     <!-- Thumbnail -->
-
+<div class="showcase-section--carousel">
     <igx-carousel>
         <igx-slide *ngFor="let slide of slides">
             <div class="image-container">
-                <img [src]="slide.src" />
-            </div>
+              <img [src]="slide.src" />
+         </div>
         </igx-slide>
     </igx-carousel>
+</div>
+    
 
-    <!-- <div class="showcase-section--grid" [ngsReveal]="revealSettings">
+    <!-- <div class="showcase-section--grid">
         <img src="/assets/site-pics/COPPER/BARLEY/Barley1.jpg" alt="Thumbnail" />
         <img src="/assets/site-pics/COPPER/T-BIRCH/TBirch3.jpg" alt="Thumbnail" />
         <img src="/assets/site-pics/COPPER/BARLEY/Barley2.jpg" alt="Thumbnail" />
@@ -52,18 +54,18 @@
 <!-- Our Mission -->
 <section class="mission-section">
     <!-- Title -->
-    <span class="mission-section--title" title="About Us" [ngsReveal]="revealSettings">About Us</span>
+    <span class="mission-section--title" title="About Us">About Us</span>
 
     <!-- Content -->
     <div class="mission-section--content">
         <!-- Message -->
-        <span [ngsReveal]="revealSettings">
+        <span>
             JDM Metal Trading was founded in 2012 by Jaimez Mayz, an industry professional with decades of trading experience. At JDM Metal Trading, we take pride in our role as a trusted participant in the international scrap metal trade. With a wide-reaching network of partners spanning over 25 countries, we strive to provide reliable service and value to our clients worldwide. Our dedication to integrity and customer satisfaction sets us apart as a preferred choice for those seeking personalized attention and quality service in their metal trading endeavors.
         </span>
 
         <!-- Preview -->
         <!-- removed image from hero section -->
-        <!--div [ngsReveal]="revealSettings">
+        <!--div>
             <img
                 src="https://images.unsplash.com/reserve/aOcWqRTfQ12uwr3wWevA_14401305508_804b300054_o.jpg?q=80&w=1176&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 alt="Road"
@@ -75,10 +77,10 @@
 <!-- Statistics -->
 <section class="statistics-section">
     <!-- Title -->
-    <span class="statistics-section--title" title="Quick Facts" [ngsReveal]="revealSettings">Quick Facts</span>
+    <span class="statistics-section--title" title="Quick Facts">Quick Facts</span>
 
     <!-- Content -->
-    <div class="statistics-section--content" [ngsReveal]="revealSettings">
+    <div class="statistics-section--content">
         <div class="statistics-section--content--card">
             <span class="statistics-section--content--card--title" title="Materials">Materials</span>
             
@@ -235,10 +237,10 @@
 <!-- Next Steps -->
 <section class="next-section">
     <!-- Title -->
-    <span class="next-section--title" title="Contact Us" [ngsReveal]="revealSettings">Contact Us</span>
+    <span class="next-section--title" title="Contact Us">Contact Us</span>
 
     <!-- Content -->
-    <span class="next-section--content" [ngsReveal]="revealSettings">
+    <span class="next-section--content">
         JDM Metal Trading is available by e-mail, phone, WhatsApp, and WeChat. <br><br> We respond to serious inquiries within 24 hours. 
         <br><br> We look forward to doing business with you!
         <br><br><br>
@@ -255,7 +257,7 @@
 
     <!-- Button -->
     <!-- removed button - might reinstate -->
-    <!-- <div class="next-section--action" [ngsReveal]="revealSettings">
+    <!-- <div class="next-section--action">
         <a href="mailto:juan@jdmmetal.com">
             <button>E-Mail</button>
         </a>
@@ -268,20 +270,20 @@
 <footer class="footer">
     <!-- Contact -->
 
-    <div class="footer--column" [ngsReveal]="revealSettings">
+    <div class="footer--column">
         <a href="mailto:juan@jdmmetal.com" title="Email">E-mail</a>
         <a href="tel:7863007404" title="Cell Phone">Cell Phone</a>
         <a href="https://www.linkedin.com/in/jaimez-mayz-87682283" target="_blank" title="LinkedIn">LinkedIn</a>
     </div>
 
-    <div class="footer--certs" [ngsReveal]="revealSettings">
+    <div class="footer--certs">
         <img src="/assets/site-pics/certs/AQSIQcert.png" alt="Thumbnail" />
         <img src="/assets/site-pics/certs/ISRIMember.jpg" alt="Thumbnail" />
         <!-- <img src="/assets/site-pics/certs/iso9001.png" alt="Thumbnail" /> -->
     </div>
 
     
-    <div class="footer--copyright" [ngsReveal]="revealSettings">
+    <div class="footer--copyright">
         © JDM Metal Trading 2024
     </div>
 
@@ -291,7 +293,7 @@
    
 
     <!-- References 
-    <div class="footer--column" [ngsReveal]="revealSettings">
+    <div class="footer--column">
         <a href="https://www.google.com" target="_blank" title="Reference 1">Reference 1</a>
         <a href="https://www.google.com" target="_blank" title="Reference 2">Reference 2</a>
     </div>

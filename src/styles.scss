@@ -8,14 +8,14 @@
 /* autoprefixer grid: on */
 
 @include core();
-@include typography($font-family: $material-typeface, $type-scale: $material-type-scale);
+//@include typography($font-family: $material-typeface, $type-scale: $material-type-scale);
 @include theme($default-palette);
 // CSS Reset, comment out if not required or using a different module
 @import 'minireset.css/minireset';
 html {
     height: 100%;
     font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial,
-        Noto Sans, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol, "Noto Color Emoji";
+        Noto Sans, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol, "Noto Color Emoji" !important;
     font-feature-settings: normal;
     background-color: rgb(36, 35, 35);
     color: rgb(255, 255, 255);
@@ -40,7 +40,6 @@ nav {
 img {
     display: block;
     max-width: 100%;
-    border-radius: 20px;
     transition: transform .25s;
 
     &:hover {
