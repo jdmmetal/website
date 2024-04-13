@@ -65,10 +65,10 @@
                     "builder": "@angular-devkit/build-angular:dev-server",
                     "configurations": {
                         "production": {
-                            "browserTarget": "jdm-metal-trading:build:production"
+                          "buildTarget": "jdm-metal-trading:build:production"
                         },
                         "development": {
-                            "browserTarget": "jdm-metal-trading:build:development"
+                          "buildTarget": "jdm-metal-trading:build:development"
                         }
                     },
                     "defaultConfiguration": "development"
@@ -76,7 +76,7 @@
                 "extract-i18n": {
                     "builder": "@angular-devkit/build-angular:extract-i18n",
                     "options": {
-                        "browserTarget": "jdm-metal-trading:build"
+                      "buildTarget": "jdm-metal-trading:build"
                     }
                 },
                 "test": {
