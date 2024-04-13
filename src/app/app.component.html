@@ -31,12 +31,21 @@
 <section class="showcase-section">
 
     <!-- Thumbnail -->
-    <div class="showcase-section--grid" [ngsReveal]="revealSettings">
+
+    <igx-carousel>
+        <igx-slide *ngFor="let slide of slides">
+            <div class="image-container">
+                <img [src]="slide.src" />
+            </div>
+        </igx-slide>
+    </igx-carousel>
+
+    <!-- <div class="showcase-section--grid" [ngsReveal]="revealSettings">
         <img src="/assets/site-pics/COPPER/BARLEY/Barley1.jpg" alt="Thumbnail" />
         <img src="/assets/site-pics/COPPER/T-BIRCH/TBirch3.jpg" alt="Thumbnail" />
         <img src="/assets/site-pics/COPPER/BARLEY/Barley2.jpg" alt="Thumbnail" />
         <img src="/assets/site-pics/COPPER/T-BIRCH/TBirch2.jpg" alt="Thumbnail" />
-    </div>
+    </div> -->
 
 </section>
 
