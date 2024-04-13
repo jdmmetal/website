@@ -32,7 +32,15 @@
                             }
                         ],
                         "styles": ["src/styles.scss", "./node_modules/eva-icons/style/eva-icons.css"],
-                        "scripts": ["./node_modules/scrollreveal/dist/scrollreveal.js"]
+                        "scripts": [
+                          "./node_modules/scrollreveal/dist/scrollreveal.js",
+                          "./node_modules/hammerjs/hammer.min.js"
+                        ],
+                        "stylePreprocessorOptions": {
+                          "includePaths": [
+                            "node_modules"
+                          ]
+                        }
                     },
                     "configurations": {
                         "production": {
@@ -94,7 +102,15 @@
                             }
                         ],
                         "styles": ["src/styles.scss", "./node_modules/eva-icons/style/eva-icons.css"],
-                        "scripts": ["./node_modules/scrollreveal/dist/scrollreveal.js"]
+                        "scripts": [
+                          "./node_modules/scrollreveal/dist/scrollreveal.js",
+                          "./node_modules/hammerjs/hammer.min.js"
+                        ],
+                        "stylePreprocessorOptions": {
+                          "includePaths": [
+                            "node_modules"
+                          ]
+                        }
                     }
                 }
             }
